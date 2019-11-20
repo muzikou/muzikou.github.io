@@ -19,34 +19,64 @@ module.exports = {
                 path: '/home/',      // 可选的, 应该是一个绝对路径
             },
             {
-                title: 'HTML',   // 必要的
+                title: 'CSS',   // 必要的
                 path: '',      // 可选的, 应该是一个绝对路径
                 children: [
                     {
-                        title: ' 常见问题1',   // 必要的
-                        path: '/html/1.md',      // 可选的, 应该是一个绝对路径
-                    },
-                    {
-                        title: ' 常见问题2',   // 必要的
-                        path: '/html/2.md',      // 可选的, 应该是一个绝对路径
+                        title: '日常总结',   
+                        path: '',      
+                        children: [
+                            {
+                                title: 'placeholder样式',   
+                                path: '/css/placeholder.md',      
+                            },
+                            {
+                                title: 'checkbox样式',   
+                                path: '/css/checkbox.md',      
+                            },
+                        ]
                     },
                 ]
             },
             {
-                title: 'css',   // 必要的
-                path: '',      // 可选的, 应该是一个绝对路径
-                children: [
+                title: 'ES6',   
+                path: '',      
+                children: [    
                     {
-                        title: ' 常见问题1',   // 必要的
-                        path: '/css/1.md',      // 可选的, 应该是一个绝对路径
+                        title: 'Node 中体验 ES6',   
+                        path: '/ES6/babel.md',      
                     },
                     {
-                        title: ' 常见问题2',   // 必要的
-                        path: '/css/2.md',      // 可选的, 应该是一个绝对路径
-                    },
+                        title: '模块化的基本语法',   
+                        path: '',      
+                        children: [
+                            {
+                                title: '默认导入与导出',   
+                                path: '/ES6/module_base/default.md',      
+                            },
+                            {
+                                title: '按需导入与导出',   
+                                path: '/ES6/module_base/demand.md',      
+                            },
+                            {
+                                title: '直接导入并执行',   
+                                path: '/ES6/module_base/import-ing.md',      
+                            },
+                        ]
+                    }
                 ]
             },
-            
+            {
+                title: '前端工程化',   
+                path: '',      
+                children: [
+                    {
+                        title: '模块化的相关规范',   
+                        path: '/module/what.md',      
+                    },
+                    
+                ]
+            }
         ]
     }
   }

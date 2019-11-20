@@ -1,7 +1,7 @@
 ---
 home: true
 heroImage: ./img/avatar.jpg
-heroText: 木子 博客
+heroText: 
 tagline: 欲戴其冠 必承其重
 actionText: 欢迎观临 →
 actionLink: /home/
