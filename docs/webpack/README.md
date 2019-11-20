@@ -1,0 +1,64 @@
+## 当前 Web 开发所面临的困境
++ 文件依赖关系错综复杂
++ 静态资源请求效率低
++ 模块化支持不友好
++ 浏览器对高级 Javascript 特性兼容性低
++ 等等....   
+面临这么多困境，怎么去解决呢？当然是 *<font color="#d63200">webpack</font>* 啦～
+## 1. webpack 是什么？
+*<font color="#d63200">webpack</font>* 是一个流行的 前端项目构建工具（打包工具），可以解决当前 *<font color="#d63200">Web</font>* 开发中所面临的困境。
+
+*<font color="#d63200">webpack</font>* 提供友好的模块化支持，以及代码压缩混淆、处理 *<font color="#d63200">JS</font>* 兼容问题、性能优化等强大的功能，从而让程序员把工具的重心放到具体的功能实现上，提高了开发效率和项目的可维护性。  
+![webpack](/img/webpack/webpack.jpg) 
+## 2. webpack 的基本使用
+### 2.1 创建列表隔行变色项目
+1. 新建项目空白目录，并在根目录终端运行如下命令，初始化包管理配置文件 *<font color="#d63200">package.json </font>*  
+```Shell
+npm init -y 
+```
+2. 新建 *<font color="#d63200">src</font>* 源代码目录，并且在 *<font color="#d63200">src</font>* 下面新建 *<font color="#d63200">index.html</font>* 首页，然后初始化 首页基本的结构，代码如下：
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <!-- 传统模式是如下引入，但是我们要用模块化思维 -->
+    <!-- <script src="./index.js"></script> -->
+</head>
+<body>
+    <ul>
+        <li>这是第 1 个li</li>
+        <li>这是第 2 个li</li>
+        <li>这是第 3 个li</li>
+        <li>这是第 4 个li</li>
+        <li>这是第 5 个li</li>
+        <li>这是第 6 个li</li>
+        <li>这是第 7 个li</li>
+        <li>这是第 8 个li</li>
+        <li>这是第 9 个li</li>
+    </ul>
+</body>
+</html>
+```
+3. 在终端执行如下命令，安装 *<font color="#d63200">jQuery</font>*
+```Shell
+npm install jquery -s
+```
+4. 继续在  *<font color="#d63200">src</font>* 下面创建  *<font color="#d63200">index.js</font>*,并写入代码 如下
+```js
+// 用 import 导入 jquery
+import $ from 'jquery'
+$(function(){
+    $('li:odd').css('background','blue')
+    $('li:even').css('background','lightblue')
+})
+```
+此时运行 *<font color="#d63200">html</font>* 文件，会发现浏览器报错，为什么会报错呢？   
+因为 *<font color="#d63200">import</font>* 语法属于 *<font color="#d63200">ES6</font>* 的模块化语法，浏览器对这种语法支持并不友好，浏览器不识别，因此就会报错。   
+既然报错那又如何解决呢？   
+可以基于 *<font color="#d63200">webpack</font>* 把这种有兼容性的代码转换成没有兼容性的代码，再引入转换之后的 *<font color="#d63200">js</font>* 文件就可，具体如何实现，请看下一篇文章 [安装和配置](/webpack/init.md)
+	
+

@@ -67,6 +67,24 @@ module.exports = {
                 ]
             },
             {
+                title: 'Webpack',   
+                path: '/webpack/',      
+                children: [
+                    {
+                        title: '安装和配置',   
+                        path: '/webpack/init.md',      
+                    },
+                    {
+                        title: '配置打包的入口与出口',   
+                        path: '/webpack/path.md',      
+                    },
+                    {
+                        title: '配置自动打包',   
+                        path: '/webpack/server.md',      
+                    },
+                ]
+            },
+            {
                 title: '前端工程化',   
                 path: '',      
                 children: [

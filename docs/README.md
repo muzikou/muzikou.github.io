@@ -12,7 +12,9 @@ features:
   details: JavaScript的学习与总结，由浅入深，以及日常开发总结，不断努力中～
 - title: 框架系列
   details: 包含当下流行框架的入门教程及学习心得，以及日常开发总结，继续学习中～
-- title: 工程化
+- title: 前端工程化
   details: WebPack、Git等开发工具，更高效的开发，更简单的维护，坚持规范中～
+- title: 面试题汇总
+  details: 总结
 footer: Copyright © 2019 muzi
 ---
