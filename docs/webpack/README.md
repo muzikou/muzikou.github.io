@@ -6,10 +6,10 @@
 + 等等....   
 面临这么多困境，怎么去解决呢？当然是 *<font color="#d63200">webpack</font>* 啦～
 ## 1. webpack 是什么？
-*<font color="#d63200">webpack</font>* 是一个流行的 前端项目构建工具（打包工具），可以解决当前 *<font color="#d63200">Web</font>* 开发中所面临的困境。
+*<font color="#d63200">webpack</font>* 是一个流行的 前端项目构建工具（打包工具），可以解决当前 *<font color="#d63200">Web</font>* 开发中所面临的困境。    
+*<font color="#d63200">webpack</font>* 提供友好的模块化支持，以及代码压缩混淆、处理 *<font color="#d63200">JS</font>* 兼容问题、性能优化等强大的功能，从而让程序员把工具的重心放到具体的功能实现上，提高了开发效率和项目的可维护性。    
 
-*<font color="#d63200">webpack</font>* 提供友好的模块化支持，以及代码压缩混淆、处理 *<font color="#d63200">JS</font>* 兼容问题、性能优化等强大的功能，从而让程序员把工具的重心放到具体的功能实现上，提高了开发效率和项目的可维护性。  
-![webpack](/img/webpack/webpack.jpg) 
+![webpack](/img/webpack/webpack.jpg)    
 ## 2. webpack 的基本使用
 ### 2.1 创建列表隔行变色项目
 1. 新建项目空白目录，并在根目录终端运行如下命令，初始化包管理配置文件 *<font color="#d63200">package.json </font>*  
@@ -58,7 +58,6 @@ $(function(){
 ```
 此时运行 *<font color="#d63200">html</font>* 文件，会发现浏览器报错，为什么会报错呢？   
 因为 *<font color="#d63200">import</font>* 语法属于 *<font color="#d63200">ES6</font>* 的模块化语法，浏览器对这种语法支持并不友好，浏览器不识别，因此就会报错。   
-既然报错那又如何解决呢？   
-可以基于 *<font color="#d63200">webpack</font>* 把这种有兼容性的代码转换成没有兼容性的代码，再引入转换之后的 *<font color="#d63200">js</font>* 文件就可，具体如何实现，请看下一篇文章 [安装和配置](/webpack/init.md)
+既然报错那又如何解决呢？请看下一篇文章 [安装和配置](/webpack/init.md)
 	
 

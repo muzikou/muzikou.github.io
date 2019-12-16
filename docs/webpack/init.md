@@ -1,3 +1,4 @@
+上一篇文章中出现的错误，其实可以基于 *<font color="#d63200">webpack</font>* 把这种有兼容性的代码转换成没有兼容性的代码，再引入转换之后的 *<font color="#d63200">js</font>* 文件就可，具体实现如下：
 ## 1. 安装包
 在终端中运行如下命令，安装 *<font color="#d63200">webpack</font>* 相关的包
 ```shell
@@ -11,7 +12,7 @@ module.exports = {
 }
 ```
 ## 3. 新增脚本
-在 *<font color="#d63200">package.json</font>* 配置文件中的 *<font color="#d63200">package.json</font>scripts 节点下，新增 *<font color="#d63200">package.json</font>dev 脚本(原有脚本保留):
+在 *<font color="#d63200">package.json</font>* 配置文件中的 *<font color="#d63200">package.json</font>* scripts 节点下，新增 *<font color="#d63200">dev</font>*  脚本，(原有脚本保留):
 ```js
 'scripts': {
     'dev': 'webpack' // script 节点下的脚本，可以通过 npm run 执行
@@ -22,7 +23,7 @@ module.exports = {
 ```shell
 npm run dev 
 ```
-打包完成之后，会自动创建一个 *<font color="#d63200">dist</font>* 文件夹，里面包含 一个 *<font color="#d63200">main.jsn</font>* ,此时再回到 *<font color="#d63200">src -> index.html</font> *中，重新引入 打包之后的 js文件，代码如下图：
+打包完成之后，会自动创建一个 *<font color="#d63200">dist</font>* 文件夹，里面包含 一个 *<font color="#d63200">main.jsn</font>* ,此时再回到 *<font color="#d63200">src -> index.html</font>* 中，重新引入 打包之后的 js文件，代码如下图：
 ```html
 <!DOCTYPE html>
 <html lang="en">
@@ -52,3 +53,5 @@ npm run dev
 ```
 此时再运行 *<font color="#d63200">index.html </font>* 文件就不会报错，运行结果如下图：
 ![index.html](/img/webpack/1.jpg) 
+
+这就是 webpack 最基本的安装与配置，但是在完整的项目中，可能需要你去修改默认的出入口，那要如何配置呢？请看下一篇文章 [配置打包的入口与出口](/webpack/path.md) 

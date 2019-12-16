@@ -26,6 +26,6 @@ console.log(export1)
 //打印输出结果为 
 // { a: 10, c: 20, show: [function show] }
 ```
-**<font color="#d63200">注意：</font>**
-+ 在每一个模块中只允许使用唯一的一次 *<font color="#d63200">export default</font>* ，否则会报错
-+ 在一个模块中如果没有向外 *<font color="#d63200">export default</font>*，则导入该模块时 默认输出 *<font color="#d63200">{}</font>*
+> **<font color="#d63200">注意：</font>**
+>> 在每一个模块中只允许使用唯一的一次 *<font color="#d63200">export default</font>* ，否则会报错     
+>> 在一个模块中如果没有向外 *<font color="#d63200">export default</font>*，则导入该模块时 默认输出 *<font color="#d63200">{}</font>*

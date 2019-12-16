@@ -22,5 +22,5 @@ console.log(a) // 打印 输出 aaa
 console.log(b) // 打印 输出 bbb
 console.log(say) // 打印 输出 [Function: say]
 ```
-**<font color="#d63200">注意：</font>**
-+ 在每一个模块中 可以使用 *<font color="#d63200">n</font>* 多次按需导出
+> **<font color="#d63200">注意：</font>**
+>> 在每一个模块中 可以使用 *<font color="#d63200">n</font>* 多次按需导出
