@@ -182,3 +182,7 @@ countChange = (good,type) =>{
 {/* 删除 add 和 minus 函数，新增 countChange 的属性*/}
 <Cart list={this.state.cartList} countChange={this.countChange}></Cart>
 ```
+
+## 结语
+
+**<font color="#d63200">React</font>**  核心是逻辑控制，视图模型控制，``jsx`` 中的视图模版最后会被替换成  ```React.createElement()```, 生成虚拟 ```Dom```，用来描述整个 ```Dom``` 结构，这些虚拟 ```Dom``` **可以保存界面的形态，展示数据，react** 帮我们维护状态或者属性，改变之后重新渲染执行组件中的 **render** 函数， ```render``` 函数会把 ```createElement()``` 创建的数据跟之前的进行对比，通过对比找出不同点，然后根据不同的点来计算出下面要进行的操作，最后把要做的实际的 ```Dom``` 操作应用到真正的 ```Dom``` 上。

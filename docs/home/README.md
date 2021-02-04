@@ -8,17 +8,21 @@
 > 现居地：杭州市   
 
 ### 技能标签 
-**` HTML5 `** **` CSS3 `** **` less `** **` canvas `** **` Bootstrap `**  
+**` HTML5 `** **` CSS3 `** **` Less `** **` canvas `** **` Bootstrap `**  
 
-**` JavaScript `** **` JQuery `** **` Ajax `**  **` JSON `**  **` axios `**   
+**` JavaScript `** **` ES6 `** **` TS `**    **` JQuery `** 
 
-**` Vue `** **` vue-router `**  **` vuex `**  **` iView `** **` Vant `** **` Element-ui `**   
+**` Ajax `**  **` JSON `**  **` Axios `**   
 
-**` React `** **` react-route `** **` redux `**  **` Ant Design `** 
+**` Vue `** **` vue-router `**  **` vuex `** **` SSR `**   **` Nuxt `**  
 
-**` WebPack `** **` Git `** **` SVN `** **` ES6 `**    **` 微信小程序 `**
+**` React `** **` react-route `** **` redux `** **` redux-saga `**
 
-**` Vscode `**  **` HBuilder `** **` Photoshop `** 
+**` Ant Design `**  **` iView `** **` Vant `** **` Element-ui `**  
+
+**` 微信小程序 `** **` 云开发 `** **` Taro `** 
+
+**` WebPack `** **` Git `** **` SVN `**   **` Vscode `**  **` HBuilder `** **` Photoshop `** 
 
 
   

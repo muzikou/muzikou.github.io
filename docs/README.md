@@ -2,8 +2,8 @@
 home: true
 heroImage: ./img/avatar.jpg
 heroText: 
-tagline: 欲戴其冠 必承其重
-actionText: 欢迎观临 →
+tagline: 坚持 + 梦想 = 成长
+actionText: 欢迎光临 →
 actionLink: /home/
 features:
 - title: WEB 前端基础
@@ -16,5 +16,5 @@ features:
   details: WebPack、Git等开发工具，更高效的开发，更简单的维护，坚持规范中～
 - title: 面试题汇总
   details: 总结
-footer: Copyright © 2019 muzi
+footer: Copyright © 2017 muzi
 ---

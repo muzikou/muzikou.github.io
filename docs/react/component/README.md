@@ -22,6 +22,7 @@ export class Welcome2 extends React.Component{
 }
 ```
 2. 然后在 *<font color="#d63200">src -> index.js</font>* 导入组件，再使用，具体代码如下：
+
 ```js
 import { Welcome1, Welcome2 } from './components/CompType'
 
@@ -35,5 +36,6 @@ function App() {
   );
 }
 ```
+
 > **<font color="#d63200">比较： </font>** 
 >> 如果一个组件只根据 *<font color="#d63200">props</font>* 渲染页面，没有内部的 *<font color="#d63200">state</font>* ，我们完全可以用函数组件的形式来实现( *<font color="#d63200">hooks</font>* 的到来会改变这个现状)

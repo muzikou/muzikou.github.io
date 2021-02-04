@@ -1,0 +1,13 @@
+/* 主页面设置*/
+*{
+    font-family: 幼圆;
+}
+.danger{
+    color: #d63200;
+}
+.primary{
+    color: #1c90f3;
+}
+.info {
+    color: #42b983;
+}
