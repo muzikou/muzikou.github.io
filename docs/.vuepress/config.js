@@ -769,7 +769,7 @@ module.exports = {
                         path: '/node/api.md',      
                     },
                     {
-                        title: '网络通信协议',   
+                        title: '跨域',   
                         path: '/node/http.md',      
                     },
                     {
@@ -778,19 +778,42 @@ module.exports = {
                     },
                 ]
             },
-            
             {
-                title: 'HTTP协议',   // 必要的
-                path: '/http/', 
+                title: '网络协议',
+                path: '/netPro/',
+                children: [
+                    {
+                        title: 'HTTP协议',   
+                        path: '/netPro/http.md',  
+                    },
+                    {
+                        title: 'TCP/UDP协议',   
+                        path: '/netPro/tcpudp.md',  
+                    }
+                ]
             },
             // {
             //     title: 'Git',   // 必要的
             //     path: '',      // 可选的, 应该是一个绝对路径
             // },
-            // {
-            //     title: '微信小程序',   // 必要的
-            //     path: '',      // 可选的, 应该是一个绝对路径
-            // },
+            {
+                title: '前端性能优化',
+                path: '/perOpt/',
+                children: [
+                    {
+                        title: '文件获取优化',   
+                        path: '/perOpt/render.md',  
+                    },
+                    {
+                        title: '代码执行优化',   
+                        path: '/perOpt/code.md',  
+                    },
+                    {
+                        title: '雅虎军规',   
+                        path: '/perOpt/rule.md',  
+                    }
+                ]
+            },
             {
                 title: '前端工程化',   
                 path: '',      

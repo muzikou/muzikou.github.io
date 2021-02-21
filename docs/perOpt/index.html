@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            width: 200px;
+            height: 2000px;
+            background: red;
+        }
+    </style>
+</head>
+<body> 
+    <div class="container">
+
+    </div>
+    <script>
+        // func 是用户传入需要节流的函数
+        // wait 是等待的时间
+
+        // const throttle = (func, wait=200) => {
+        //     // 定义上次执行的时间
+        //     let lastTime = 0;
+        //     return (...args) => {
+        //         let nowTime = new Date().getTime()
+        //         if(nowTime - lastTime > wait){
+        //             func.apply(this, args)
+        //             lastTime = nowTime
+        //         }
+        //     }
+        // }
+        // let i = 1
+        // window.addEventListener('scroll', throttle(() => {
+        //     console.log(i)
+        //     i += 1
+        // }), 300)
+
+
+        /// 校验用户名是不是重复，用户输入完 向后端发起请求
+        // 如果用户每次输入都发出请求，冗余请求过多
+        // 用户停止输入字符 500ms 后在发出
+        const debounce = (func, wait=200) => {
+            let timer = 0;
+            return (...args) => {
+                if (timer) clearTimeout(timer)
+                timer = setTimeout(() => {
+                    func.apply(this, args)
+                }, wait)
+            }
+        }
+        let i = 1
+        window.addEventListener('scroll', debounce(() => {
+            console.log(i)
+            i += 1
+        }), 500)
+    </script>
+</body>
+</html>
