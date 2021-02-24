@@ -815,6 +815,24 @@ module.exports = {
                 ]
             },
             {
+                title: '数据结构与算法',   
+                path: '',      
+                children: [
+                    {
+                        title: '算法的复杂度',   
+                        path: '/algorithm/O.md',      
+                    },
+                    {
+                        title: '常见的数据结构',   
+                        path: '/algorithm/dataStructure.md',      
+                    },
+                    {
+                        title: '常见的算法',   
+                        path: '/algorithm/algorithm.md',      
+                    },
+                ]         
+            },
+            {
                 title: '前端工程化',   
                 path: '',      
                 children: [
@@ -844,7 +862,13 @@ module.exports = {
             },
             // {
             //     title: '面试汇总',   
-            //     path: '',          
+            //     path: '',      
+            //     children: [
+            //         {
+            //             title: '面试题',   
+            //             path: '/interview/questions.md',      
+            //         }
+            //     ]         
             // }
         ]
     }

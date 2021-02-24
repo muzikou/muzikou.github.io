@@ -26,7 +26,8 @@ test.call(Obj) // this 指向 Obj
 
 // 3. call(this,arg1,arg2) 可以传参数
 test.call(Obj,12,34) // Obj,46
-``` 
+```
+
 ## 2. 构造函数继承
 + 核心原理：     
     通过 *<font color="#d63200">call()</font>* 把父类型的 *<font color="#d63200">this</font>* 指向子类型的 *<font color="#d63200">this</font>*，这样就可以实现 子类型 继承 父类型的属性。
